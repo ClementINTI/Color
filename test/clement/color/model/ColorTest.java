@@ -22,43 +22,103 @@ public class ColorTest {
 
 	// argument invalide
 	@Test(expected = IllegalArgumentException.class)
-	public void testConstructeurInt() {
+	public void testConstructeurInt1() {
 		new Color(256, 10, 10);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurInt2() {
 		new Color(-1, 10, 10);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurInt3() {
 		new Color(10, 256, 10);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurInt4() {
 		new Color(10, -1, 10);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurInt5() {
 		new Color(10, 10, 256);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurInt6() {
 		new Color(10, 10, -1);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void testConstructeurHexa() {
+	public void testConstructeurHexa1() {
 		new Color("#");
-		new Color("#GHIJKL");
-		new Color("000000");
-		new Color("1000000");
-		new Color("#GH0000");
-		new Color("#00IJ11");
-		new Color("#2233KL");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa2() {
 		new Color("#GHIJKL");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void testSetBlue() {
+	public void testConstructeurHexa3() {
+		new Color("000000");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa4() {
+		new Color("1000000");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa5() {
+		new Color("#GH0000");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa6() {
+		new Color("#00IJ11");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa7() {
+		new Color("#2233KL");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConstructeurHexa8() {
+		new Color("#GHIJKL");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testSetBlue1() {
 		color.setBlue(-1);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testSetBlue2() {
 		color.setBlue(256);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void testSetGreen() {
-		color.setGreen(-1);
+	public void testSetGreen1() {
 		color.setGreen(256);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
-	public void testSetRed() {
-		color.setRed(-1);
+	public void testSetGreen2() {
+		color.setGreen(-1);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testSetRed1() {
 		color.setRed(256);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testSetRed2() {
+		color.setRed(-1);
 	}
 
 	@Test
