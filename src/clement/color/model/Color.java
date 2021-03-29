@@ -41,9 +41,17 @@ public class Color {
 		// this.b = b;
 	}
 
+	public String getHexValue() {
+		return null;
+	}
+
+	public void setHexValue(String hexValue) {
+		this.hexValue = hexValue;
+	}
+
 	@Override
 	public String toString() {
-		return "Color []";
+		return null;
 	}
 
 }
