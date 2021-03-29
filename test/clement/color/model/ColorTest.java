@@ -63,7 +63,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa1() {
-		new Color("#");
+		colorHexa.setHexValue("#");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -73,7 +73,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa2() {
-		new Color("#GHIJKL");
+		colorHexa.setHexValue("#GHIJKL");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -83,7 +83,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa3() {
-		new Color("000000");
+		colorHexa.setHexValue("000000");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -93,7 +93,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa4() {
-		new Color("1000000");
+		colorHexa.setHexValue("1000000");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -103,7 +103,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa5() {
-		new Color("#GH0000");
+		colorHexa.setHexValue("#GH0000");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -113,7 +113,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa6() {
-		new Color("#00IJ11");
+		colorHexa.setHexValue("#00IJ11");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -123,7 +123,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa7() {
-		new Color("#2233KL");
+		colorHexa.setHexValue("#2233KL");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
@@ -133,7 +133,7 @@ public class ColorTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testSetHexa8() {
-		new Color("#GHIJKL");
+		colorHexa.setHexValue("#GHIJKL");
 	}
 	// ---------------------------------TEST Set int
 	// IllegalArgumentException -------------
@@ -172,7 +172,7 @@ public class ColorTest {
 	// ---------------------------------------
 	@Test
 	public void testGetBlue() {
-		assertEquals(11, colorInt.getBlue());
+		assertEquals(65, colorInt.getBlue());
 	}
 
 	@Test
@@ -182,7 +182,7 @@ public class ColorTest {
 
 	@Test
 	public void testGetRed() {
-		assertEquals(65, colorInt.getRed());
+		assertEquals(11, colorInt.getRed());
 	}
 
 	@Test
